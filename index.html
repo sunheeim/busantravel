@@ -10,43 +10,34 @@
     <link rel="apple-touch-icon" href="logo192.png" />
     <link rel="manifest" href="manifest.json" />
     <title>React App</title>
-    <script defer="defer" src="static/js/main.6885a963.js"></script>
-    <link href="static/css/main.f9ec9ed8.css" rel="stylesheet">
+    <script defer="defer" src="./static/js/main.7e687009.js"></script>
+    <link href="./static/css/main.0e79af86.css" rel="stylesheet">
 </head>
 
 <body><noscript>You need to enable JavaScript to run this app.</noscript>
-    <header>
-        <figure class="logo">
-            <a href="index.html">
-                <img src="img/로고.png" alt="logo">
-            </a>
-        </figure>
-        <figure class="header_menu">
-            <a href="#">
-                <img src="img/menu.png" alt="menuicon">
-            </a>
-        </figure>
-    </header>
-
-    <section class="main">
-
-        <figure class="main_visual">
-            <img src="img/main.png" alt="부산관광명소타이틀">
-        </figure>
-        <div class="menu">
-            <figure>
-                <a href="index.html">
-                    <img src="img/관광지버튼.png" alt="관광지안내버튼">
-                </a>
-            </figure>
-            <figure>
-                <a href="#">
-                    <img src="img/맛집버튼.png" alt="맛집안내버튼">
-                </a>
-            </figure>
-        </div>
-    </section>
-    <div id="root"></div>
+    <wrap id="wrap">
+        <main class="main_visual">
+            <figure class="bg"><img src="./img/bg.jpg" alt="mainbg"></figure>
+            <div class="logo">
+                <figure><img src="./img/logo.png" alt="logo img"></figure>
+            </div>
+            <div class="inner">
+                <div class="text">
+                    <h1>부산 투어 코스<br />BEST 6</h1>
+                    <p>부산에 방문하면 꼭 가봐야 할 코스들을 소개합니다.</p>
+                </div>
+            </div>
+        </main>
+        <section class="section01">
+            <div class="inner">
+                <ul>
+                    <li>추천코스</li>
+                    <li>맛집</li>
+                </ul>
+            </div>
+        </section>
+        <div id="root"></div>
+    </wrap><!-- #wrap end -->
 </body>
 
 </html>

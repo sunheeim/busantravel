@@ -1,0 +1,262 @@
+@font-face {
+    font-display: swap;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/static/media/Pretendard-SemiBold.b02e98ac09bdf4b3a76b.eot);
+    src: url(/static/media/Pretendard-SemiBold.b02e98ac09bdf4b3a76b.eot?#iefix) format("embedded-opentype"), url(/static/media/Pretendard-SemiBold.1b902668c7a690eebe62.woff2) format("woff2"), url(/static/media/Pretendard-SemiBold.cea547f607bbbcd5aedc.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/static/media/Pretendard-ExtraBold.dbb212d93368722d77f3.eot);
+    src: url(/static/media/Pretendard-ExtraBold.dbb212d93368722d77f3.eot?#iefix) format("embedded-opentype"), url(/static/media/Pretendard-ExtraBold.7f5ef805a12c53442e3e.woff2) format("woff2"), url(/static/media/Pretendard-ExtraBold.5df825ac336701a72a76.woff) format("woff")
+}
+
+body,
+html {
+    font-size: 62.5%
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.main_visual {
+    color: #333;
+    font-family: Pretendard;
+    margin: 0 auto;
+    max-width: 767px;
+    position: relative;
+    width: 100%;
+
+    .bg {
+        height: 48.46vw;
+        width: 100%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%
+        }
+    }
+
+    .logo {
+        figure {
+            left: 30px;
+            position: absolute;
+            top: 30px
+        }
+    }
+
+    .text {
+        bottom: 6rem;
+        position: absolute;
+        right: 6rem;
+        text-align: right;
+
+        h1 {
+            font-size: 11.5rem;
+            padding-bottom: 6rem
+        }
+
+        p {
+            font-size: 2rem
+        }
+    }
+}
+
+.main_visual .text h1:after {
+    background-color: #333;
+    bottom: 7rem;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 0;
+    width: 60%
+}
+
+.section01 {
+    background-color: #f2eee8;
+    color: #333;
+    font-family: Pretendard;
+    margin: 0 auto;
+    max-width: 767px;
+    padding: 50px 0;
+    width: 100%;
+
+    .inner {
+        margin: 0 auto;
+        max-width: 767px;
+        width: calc(100% - 60px);
+
+        ul {
+            display: flex;
+            font-size: 2.5rem;
+            gap: 20px
+        }
+
+        li.on,
+        li:hover {
+            cursor: pointer;
+            -webkit-text-decoration: 1px underline;
+            text-decoration: 1px underline;
+            text-underline-offset: 7px
+        }
+
+        li.on a {
+            display: block
+        }
+    }
+}
+
+#root {
+    .wrap {
+        background-color: #f2eee8;
+        margin: 0 auto;
+        max-width: 767px;
+        width: 100%
+    }
+}
+
+.tour_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 767px;
+    width: calc(100% - 60px);
+
+    .item {
+        background-color: #fff;
+        box-shadow: 0 0 5px #44444459;
+        height: 100%;
+        margin-bottom: 30px;
+        position: relative;
+        width: calc(50% - 10px);
+
+        h4 {
+            font-family: Pretendard;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            word-break: keep-all
+        }
+
+        figure {
+            height: 23.23vw;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%
+            }
+        }
+
+        .item--text {
+            color: #333;
+            font-family: Pretendard;
+            height: 130px;
+            line-height: 25px;
+            padding: 2rem 10px;
+            width: 100%;
+
+            p {
+                font-size: 1.8rem;
+                word-break: keep-all
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .main_visual {
+        .bg {
+            height: 69.46vw
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    body,
+    html {
+        font-size: 50%
+    }
+
+    .main_visual {
+        .bg {
+            height: 97.46vw
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    body,
+    html {
+        font-size: 43.75%
+    }
+
+    .main_visual {
+        .bg {
+            height: 97.46vw
+        }
+
+        .text {
+            h1 {
+                font-size: 60px
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main_visual {
+        .text {
+            h1 {
+                font-size: 55px
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    body,
+    html {
+        font-size: 37.5%
+    }
+
+    .main_visual {
+        .text {
+            h1 {
+                font-size: 50px
+            }
+        }
+    }
+
+    .tour_list {
+        .item {
+            .item--text {
+                height: 100px;
+                line-height: normal
+            }
+        }
+    }
+}
+
+/*# sourceMappingURL=main.0e79af86.css.map*/
