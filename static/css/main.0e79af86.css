@@ -43,41 +43,39 @@ a {
     max-width: 767px;
     position: relative;
     width: 100%;
+}
 
-    .bg {
-        height: 48.46vw;
-        width: 100%;
+.main_visual .bg {
+    height: 48.46vw;
+    width: 100%;
+}
 
-        img {
-            height: 100%;
-            object-fit: cover;
-            width: 100%
-        }
-    }
+.main_visual .bg img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
 
-    .logo {
-        figure {
-            left: 30px;
-            position: absolute;
-            top: 30px
-        }
-    }
+.main_visual .logo figure {
+    left: 30px;
+    position: absolute;
+    top: 30px
+}
 
-    .text {
-        bottom: 6rem;
-        position: absolute;
-        right: 6rem;
-        text-align: right;
+.main_visual .text {
+    bottom: 6rem;
+    position: absolute;
+    right: 6rem;
+    text-align: right;
+}
 
-        h1 {
-            font-size: 11.5rem;
-            padding-bottom: 6rem
-        }
+.main_visual .text h1 {
+    font-size: 11.5rem;
+    padding-bottom: 6rem
+}
 
-        p {
-            font-size: 2rem
-        }
-    }
+.main_visual .text p {
+    font-size: 2rem
 }
 
 .main_visual .text h1:after {
@@ -98,39 +96,37 @@ a {
     max-width: 767px;
     padding: 50px 0;
     width: 100%;
-
-    .inner {
-        margin: 0 auto;
-        max-width: 767px;
-        width: calc(100% - 60px);
-
-        ul {
-            display: flex;
-            font-size: 2.5rem;
-            gap: 20px
-        }
-
-        li.on,
-        li:hover {
-            cursor: pointer;
-            -webkit-text-decoration: 1px underline;
-            text-decoration: 1px underline;
-            text-underline-offset: 7px
-        }
-
-        li.on a {
-            display: block
-        }
-    }
 }
 
-#root {
-    .wrap {
-        background-color: #f2eee8;
-        margin: 0 auto;
-        max-width: 767px;
-        width: 100%
-    }
+.section01 .inner {
+    margin: 0 auto;
+    max-width: 767px;
+    width: calc(100% - 60px);
+}
+
+.section01 .inner ul {
+    display: flex;
+    font-size: 2.5rem;
+    gap: 20px
+}
+
+.section01 .inner li.on,
+li:hover {
+    cursor: pointer;
+    -webkit-text-decoration: 1px underline;
+    text-decoration: 1px underline;
+    text-underline-offset: 7px
+}
+
+.section01 .inner li.on a {
+    display: block
+}
+
+#root .wrap {
+    background-color: #f2eee8;
+    margin: 0 auto;
+    max-width: 767px;
+    width: 100%
 }
 
 .tour_list {
@@ -141,52 +137,58 @@ a {
     max-width: 767px;
     width: calc(100% - 60px);
 
-    .item {
-        background-color: #fff;
-        box-shadow: 0 0 5px #44444459;
-        height: 100%;
-        margin-bottom: 30px;
-        position: relative;
-        width: calc(50% - 10px);
 
-        h4 {
-            font-family: Pretendard;
-            font-size: 2rem;
-            margin-bottom: 15px;
-            word-break: keep-all
-        }
+}
 
-        figure {
-            height: 23.23vw;
+.tour_list .item {
+    background-color: #fff;
+    box-shadow: 0 0 5px #44444459;
+    height: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    width: calc(50% - 10px);
 
-            img {
-                height: 100%;
-                object-fit: cover;
-                width: 100%
-            }
-        }
 
-        .item--text {
-            color: #333;
-            font-family: Pretendard;
-            height: 130px;
-            line-height: 25px;
-            padding: 2rem 10px;
-            width: 100%;
+}
 
-            p {
-                font-size: 1.8rem;
-                word-break: keep-all
-            }
-        }
-    }
+.tour_list .item h4 {
+    font-family: Pretendard;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    word-break: keep-all
+}
+
+.tour_list .item figure {
+    height: 23.23vw;
+
+
+}
+
+.tour_list .item figure img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.tour_list .item--text {
+    color: #333;
+    font-family: Pretendard;
+    height: 130px;
+    line-height: 25px;
+    padding: 2rem 10px;
+    width: 100%;
+
+
+}
+
+.tour_list .item--text p {
+    font-size: 1.8rem;
+    word-break: keep-all
 }
 
 @media screen and (max-width:1240px) {
-    .main_visual {
-        .bg {
-            height: 69.46vw
-        }
+    .main_visual .bg {
+        height: 69.46vw
     }
 }
 
@@ -197,10 +199,8 @@ a {
         font-size: 50%
     }
 
-    .main_visual {
-        .bg {
-            height: 97.46vw
-        }
+    .main_visual .bg {
+        height: 97.46vw
     }
 }
 
@@ -211,18 +211,13 @@ a {
         font-size: 43.75%
     }
 
-    .main_visual {
-        .bg {
-            height: 97.46vw
-        }
+    .main_visual .bg {
+        height: 97.46vw
+    }
+    .main_visual .text h1 {
+        font-size: 60px;
+        padding-bottom: 3rem;
 
-        .text {
-            h1 {
-                font-size: 60px;
-                padding-bottom: 3rem;
-
-            }
-        }
     }
 }
 
@@ -231,12 +226,8 @@ a {
 }
 
 @media screen and (max-width:480px) {
-    .main_visual {
-        .text {
-            h1 {
-                font-size: 55px
-            }
-        }
+    .main_visual .text h1 {
+        font-size: 55px
     }
 }
 
@@ -247,21 +238,13 @@ a {
         font-size: 37.5%
     }
 
-    .main_visual {
-        .text {
-            h1 {
-                font-size: 50px
-            }
-        }
+    .main_visual .text h1 {
+        font-size: 50px
     }
 
-    .tour_list {
-        .item {
-            .item--text {
-                height: 100px;
-                line-height: normal
-            }
-        }
+    .tour_list .item .item--text {
+        height: 100px;
+        line-height: normal
     }
 }
 
