@@ -218,10 +218,16 @@ a {
 
         .text {
             h1 {
-                font-size: 60px
+                font-size: 60px;
+                padding-bottom: 3rem;
+
             }
         }
     }
+}
+
+.main_visual .text h1::after {
+    bottom: 5rem;
 }
 
 @media screen and (max-width:480px) {
